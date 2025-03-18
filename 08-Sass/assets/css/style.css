@@ -1,0 +1,125 @@
+#section {
+    height: 6rem;
+}
+
+.nav {
+    height: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    align-items: center;
+
+}
+
+.list {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.start {
+    font-size: 3rem;
+}
+
+.some {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+
+}
+
+.shop {
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.zero {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.shop:hover {
+    background-color: black;
+    color: white;
+}
+
+#center {
+    height: 30rem;
+    background-color: black;
+}
+
+.middle {
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 2rem;
+}
+
+.in {
+    font-size: 6rem;
+}
+
+.with {
+    font-size: 2rem;
+    color: grey;
+}
+#step{
+    margin: 10rem 0;
+}
+.image{
+    width: 27rem;
+    height: 18rem;
+}
+.fancy{
+    display: flex;
+    flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding:2rem 0 ;
+  font-size: 1.5rem;
+}
+.cards{
+    width: 27rem;
+    height: 40rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+.buy{
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-left: 8rem;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.buy:hover{
+    background-color: black;
+    color: white;
+}
+#footer{
+    background-color: black;
+    height: 15rem;
+}
+.foot{
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
