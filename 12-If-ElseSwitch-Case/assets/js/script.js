@@ -43,7 +43,7 @@ switch (fesil) {
         alert("Yaz ayları: Mart, Aprel, May");
         break;
     case "yay":
-        console.log("Yay ayları: İyun, İyul, Avqust");
+        console.log("Yay aylari: İyun, İyul, Avqust");
         alert("Yay ayları: İyun, İyul, Avqust");
         break;
     case "payız":
@@ -56,5 +56,5 @@ switch (fesil) {
         break;
     default:
         console.log("Bele bir mövsüm yoxdur");
-        alert("Bele bir mövsüm yoxdur");
+        alert("Bele bir mövsüm yoxdur.");
 }
