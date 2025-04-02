@@ -1,75 +1,36 @@
-// // let fuel = prompt("Yanacaği seçi:");
-// let amount = prompt("Yanacağın qiymətlərini müəyyənləşdirin:");
-// let qiymet = {
-//     "dizel": 0.9, 
-//     "benzin": 1.0, 
-//     "premium": 1.5}
-
-// if (Dizel){
-//     console.log(Dizel);
-//      alert ("90 AZN ");
-// }
-// else if(Benzin){
-//     alert("1 Azn");
-// }
+// Task №1
+const dizel = 0.9;  // Dizel qiyməti (AZN)
+const benzin = 1;   // Adi benzin qiyməti (AZN)
+const premium = 1.5; // Premium benzin qiyməti (AZN)
 
 
-// Task 1.1
-// const qiymetler = {
-//     "dizel": 0.9,
-//     "benzin": 1.0,
-//     "premium": 1.5
-// };
-
-// const yanacaqQiymetleri = {
-//     "dizel": 0.9,
-//     "benzin": 1.0,
-//     "premium": 1.5
-// };
-
-// let fuel = prompt("Yanacaqlardan birini seçin:").toLowerCase();
-// let litr = parseFloat(prompt("Litrn qeyd edin"));
+let yanacaqNovu = prompt("Yanacaq növünü seçin: \n1. Dizel\n2. Adi Benzin\n3. Premium Benzin\nSeçiminiz (1-3):");
+let miqdar =Number(prompt("Almaq istədiyiniz yanacağın miqdarını litrlə daxil edin:"));
+let balans =Number(prompt("Balansınızı AZN ilə daxil edin:"));
 
 
-// if (yanacaqQiymetleri[fuel] && litr > 0) {
-//     let mebleg = yanacaqQiymetleri[nov] * litr;
-//     alert(`${litr} litr ${nov} yanacağın qiyməti: ${mebleg.toFixed(2)} AZN`);
-// } else {
-//     alert("Yanlış məlumat daxil etdiniz!");
-// }
+let qiymet;
+if (yanacaqNovu == "1") {
+    qiymet = dizel;
+} else if (yanacaqNovu == "2") {
+    qiymet = benzin;
+} else if (yanacaqNovu == "3") {
+    qiymet = premium;
+} else {
+    alert("Lütfən, düzgün Yanacaq Tipi daxil edin.");
+}
 
 
-
-// Tak 1.2
-// const yanacaqQiymetleri = {
-//     1: { ad: "Dizel", qiymet: 0.9 },
-//     2: { ad: "Benzin", qiymet: 1.0 },
-//     3: { ad: "Premium", qiymet: 1.5 }
-// };
+let umumiDeyer = miqdar * qiymet;
 
 
-// let secim = prompt(`
-// Yanacaq növünü seçin:
-// 1. Dizel (0.90 AZN/litr)
-// 2. Benzin (1.00 AZN/litr)
-// 3. Premium (1.50 AZN/litr)
-// Seçim nömrəsini daxil edin (1-3):`);
-
-// // Seçimi yoxlama
-// if (yanacaqQiymetleri[secim]) {
-//     let litr = parseFloat(prompt(`Neçə litr ${yanacaqQiymetleri[secim].ad} yanacaq almaq istəyirsiniz?`));
-    
-//     if (litr > 0) {
-//         let mebleg = yanacaqQiymetleri[secim].qiymet * litr;
-//         alert(`${litr} litr ${yanacaqQiymetleri[secim].ad} yanacağın qiyməti: ${mebleg.toFixed(2)} AZN`);
-//     } else {
-//         alert("Xəta: Litr miqdarı sıfırdan böyük olmalıdır!");
-//     }
-// } else {
-//     alert("Yanacq düzgün deyil");
-// }
-
-
+if (umumiDeyer <= balans) {
+    let qalanBalans = balans - umumiDeyer;
+    alert("Yanacaq alışı uğurla tamamlandı! Qalan balansınız: " + qalanBalans.toFixed(2) + " AZN.");
+} else {
+    let itkinMebleg = umumiDeyer - balans;
+    alert("Ümumi dəyər: "  + " AZN.\nCari balansınız: " +  " AZN.\nİtkin məbləğ: " +  " AZN.");
+}
 
 
 
