@@ -1,17 +1,14 @@
 // // // Task 2
 for (let i = 1; i <= 10; i++) {
     let row = "";
-    // Sətir nömrəsi
     if (i < 10) {
         row += " " + i + " |";
     } else {
         row += i + " |";
     }
     
-    // Vurma nəticələri
     for (let j = 1; j <= 10; j++) {
         let result = i * j;
-        // Nəticəni formatla
         if (result < 10) {
             row += " " + result + " ";
         } else if (result < 100) {
@@ -26,17 +23,17 @@ for (let i = 1; i <= 10; i++) {
 
 // // Task 3
 const users = [
-    { name: "Əli", age: 25 },
-    { name: "Ayşə", age: 32 },
-    { name: "Mehdi", age: 28 },
-    { name: "Fatma", age: 35 },
-    { name: "Nərmin", age: 22 },
-    { name: "Rəşad", age: 40 }
+    { name: "Madat", age: 25 },
+    { name: "Ferid", age: 32 },
+    { name: "Ferhat", age: 28 },
+    { name: "Sahib", age: 35 },
+    { name: "Eli", age: 22 },
+    { name: "Sefer", age: 40 }
 ];
 
 
-const youngUsers = [];  // 30-dan kiçik olanlar
-const oldUsers = [];    // 30-dan böyük olanlar
+const youngUsers = [];  
+const oldUsers = [];    
 
 
 for (let i = 0; i < users.length; i++) {
@@ -49,10 +46,10 @@ for (let i = 0; i < users.length; i++) {
 }
 
 
-console.log("Yaşı 30-dan kiçik olan istifadəçilər:");
+console.log("Yaşi 30-dan kiçik olan istifadeçiler:");
 console.log(youngUsers);
 
-console.log("\nYaşı 30-dan böyük olan istifadəçilər:");
+console.log("\nYaşi 30-dan böyük olan istifadeçiler:");
 console.log(oldUsers);
 
 
@@ -60,14 +57,13 @@ console.log(oldUsers);
 
 // // Task 5
 
-let bolunen = Number(prompt("Bölünən ədədi daxil edin:"));
-let bolen =Number(prompt("Bölən ədədi daxil edin:"));
+let bolunen = Number(prompt("Bölünen ededi daxil edin:"));
+let bolen =Number(prompt("Bölen ededi daxil edin:"));
 
 
 if (bolen === 0) {
-    console.log("Xəta: Sıfıra bölmək olmaz!");
+    console.log("Xeta: Sifira bölmek olmaz!");
 } else {
-    // Qalığı tapmaq üçün for döngüsü
     let qaliq = bolunen;
     
     for (; qaliq >= bolen; ) {
@@ -95,5 +91,7 @@ for (let i = 1; i < arr.length; i++) {
 }
 
 
-console.log("Massivdəki ən böyük ədəd: " + enBoyuk);
+console.log("Massivdeki en böyük eded: " + enBoyuk);
+
+
 
