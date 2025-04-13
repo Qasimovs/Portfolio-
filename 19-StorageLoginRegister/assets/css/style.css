@@ -91,7 +91,7 @@
   }
   
   .card-title {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #333333;
@@ -124,7 +124,7 @@
   
   .card-rating {
     font-size: 14px;
-    color: #ff9800;
+    color: hsl(36, 100%, 50%);
   }
   
   .card-rating span:last-child {
