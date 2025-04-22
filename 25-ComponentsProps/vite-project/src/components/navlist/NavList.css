@@ -1,0 +1,11 @@
+.ullist{
+    display: flex;
+    gap: 30px;
+   
+}
+.list{
+    a{
+        color: white;
+        font-size: 16px;
+    }
+}
