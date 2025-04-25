@@ -1,28 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
 import './App.css'
+import Layout from './components/layout/Layout'
+import Layout from './components/layout/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
+import About from './pages/About'
+import Contact from './pages/Contact'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
-import { Route, Routes } from 'react-router-dom';
+import Services from './pages/Services'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: "<Layout />",
+    children: [
+      {
+        path: "/",
+        element: "<Home />"
+      },
+      {
+        path: "/about",
+        element: "<About />"
+      },
+      {
+        path: "/contact",
+        element: "<Contact />"
+      },
+      {
+        path: "/services",
+        element: "<Services />"
+      },
+      {
+        path: "*",
+        element: <div>Not Found</div>
+      }
+
+    ]
+  }
+])
+
 
 
 function App() {
-  
+  // const [count, setCount] = useState(0)
+
 
   return (
-   <> <Home/>
+    <>
+    <Home/>
     
-   <div className="App">
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/services' element={<Services/>} />
-      </Routes>
-    </div></>
+      <RouterProvider router = { router}/>
+    </>
   )
 }
 

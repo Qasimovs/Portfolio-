@@ -1,0 +1,39 @@
+.todo {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 6px;
+    justify-content: space-between;
+  }
+  
+  .done {
+    background-color: #d4edda;
+    text-decoration: line-through;
+    color: green;
+  }
+  
+  .notDone {
+    background-color: #f8d7da;
+    color: red;
+  }
+  
+  .index {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .buttons button {
+    margin-left: 6px;
+  }
+  
+  .editInput {
+    flex: 1;
+    padding: 5px;
+  }
+  
