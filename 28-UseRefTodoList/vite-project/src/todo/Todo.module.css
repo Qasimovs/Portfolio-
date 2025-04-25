@@ -1,0 +1,169 @@
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.addButton {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #0069d9;
+}
+
+.todoList {
+  margin-bottom: 20px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pending {
+  background-color: #ffecec;
+  border-left: 4px solid #dc3545;
+}
+
+.completed {
+  background-color: #eaffea;
+  border-left: 4px solid #28a745;
+}
+
+.todoNumber {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.todoText {
+  flex: 1;
+  margin-right: 10px;
+  color: #222;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 6px;
+}
+
+.completeButton,
+.editButton,
+.deleteButton,
+.saveButton,
+.cancelButton {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  color: white;
+}
+
+.completeButton {
+  background-color: #17a2b8;
+}
+.completeButton:hover {
+  background-color: #138496;
+}
+
+.editButton {
+  background-color: #ffc107;
+}
+.editButton:hover {
+  background-color: #e0a800;
+}
+.editButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+}
+.deleteButton:hover {
+  background-color: #c82333;
+}
+.deleteButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.editInput {
+  flex: 1;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.saveButton {
+  background-color: #28a745;
+}
+.saveButton:hover {
+  background-color: #218838;
+}
+
+.cancelButton {
+  background-color: #6c757d;
+}
+.cancelButton:hover {
+  background-color: #5a6268;
+}
+
+.deleteAllButton {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteAllButton:hover {
+  background-color: #c82333;
+}
