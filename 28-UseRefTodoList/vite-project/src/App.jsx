@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import styles from './App.module.css';
 import 'react-toastify/dist/ReactToastify.css';
-import Todo from './components/Todo';
+// import Todo from './src/components/Todo';
 
 let idCounter = 1;
 
