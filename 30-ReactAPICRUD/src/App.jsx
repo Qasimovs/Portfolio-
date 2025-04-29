@@ -1,18 +1,39 @@
-import { useState } from 'react'
-import './App.css'
+import React, { useEffect, useState } from "react";
 import Products from "./pages/Products";
-import Product from './components/product/Product';
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
+const App = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-function App() {
-  const [count, setCount] = useState(0)
+  const fetchProducts = async () => {
+    setLoading(true);
+    try {
+      const res = await axios.get("https://fakestoreapi.com/products");
+      setProducts(res.data);
+    } catch (err) {
+      toast.error("Error fetching products");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
   return (
     <>
-      <Products/>
-      <Product/> 
+      <ToastContainer />
+      <Products
+        products={products}
+        setProducts={setProducts}
+        loading={loading}
+      />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
