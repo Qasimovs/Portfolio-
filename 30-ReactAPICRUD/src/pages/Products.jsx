@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import Product from ".src/components/Product";
+import Product from "../components/product/Product.jsx";
+
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -124,7 +125,6 @@ const Products = () => {
         ))
       )}
 
-      {/* Modal */}
       {editId && (
         <div style={{
           position: "fixed",
