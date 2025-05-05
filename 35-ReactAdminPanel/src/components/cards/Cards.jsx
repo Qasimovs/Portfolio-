@@ -20,7 +20,7 @@ const Cards = () => {
 
 
     return (
-            <div style={{display:"flex", flexWrap:"wrap",gap:"20px"}}>
+            <div style={{display:"flex",width:"1400px" ,flexWrap:"wrap",gap:"20px",alignItems:"center",justifyContent:"center"}}>
                 {products.map((product) => (
                     <Card key={product.id} product={product}/>
                 ))}
