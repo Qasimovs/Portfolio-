@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "name": "Madat",
+      "price": 35
+    },
+
+  {
+    "id": 123,
+    "name": "Task",
+    "price": 55
+  },
+  
+  {
+    "id": 1323323,
+    "name": "Task elave edildi",
+    "price": 905
+  }
+]
