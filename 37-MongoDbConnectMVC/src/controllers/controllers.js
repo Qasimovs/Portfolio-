@@ -6,7 +6,7 @@ export const getProducts = async (req, res) => {
         return res.send(products)
     } catch (error) {
 
-        res.status(500).send("Interval server error")
+        res.status(500).send("Interval server errror")
     }
 };
 
@@ -21,7 +21,7 @@ export const addProducts = async (req, res) => {
 
     } catch (error) {
 
-        res.status(500).send("Interval server error")
+        res.status(500).send("Interval server errror")
     }
 }
 
